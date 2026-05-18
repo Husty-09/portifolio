@@ -32,12 +32,6 @@ export default function Header() {
             >
               Sobre
             </Link>
-            <a
-              href="#contato"
-              className="text-slate-400 hover:text-white transition-colors duration-300 text-sm font-medium"
-            >
-              Contato
-            </a>
           </div>
 
           {/* GitHub + Menu Mobile */}
@@ -93,23 +87,17 @@ export default function Header() {
         {isOpen && (
           <div className="md:hidden mt-4 pt-4 border-t border-slate-700/50 space-y-3">
             <Link
+              href="/"
+              className="block text-slate-400 hover:text-white transition-colors py-2 text-sm"
+            >
+              Home
+            </Link>
+            <Link
               href="/sobre"
               className="block text-slate-400 hover:text-white transition-colors py-2 text-sm"
             >
               Sobre
             </Link>
-            <Link
-              href="/projects"
-              className="block text-slate-400 hover:text-white transition-colors py-2 text-sm"
-            >
-              Projetos
-            </Link>
-            <a
-              href="#contato"
-              className="block text-slate-400 hover:text-white transition-colors py-2 text-sm"
-            >
-              Contato
-            </a>
           </div>
         )}
       </nav>
