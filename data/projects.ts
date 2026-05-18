@@ -23,7 +23,7 @@ export const projects: Project[] = [
     description:
       'Protótipo em alta fidelidade de sistema interno para Ministério de Minas e Energias, aplicando GOV.BR Design System oficial.',
     longDescription:
-      'Liderei o levantamento de requisitos, análise de dados e prototipagem visual em alta fidelidade para uma aplicação interna do Ministério de Minas e Energias, aplicando o GOV.BR Design System oficial. O projeto foi reconhecido como destaque entre pares pela excelência técnica e qualidade de design, entregue através de parceria de extensão universitária com a Universidade de Brasília. Apresentei o protótipo final presencialmente para a equipe de engenharia completa do cliente e liderança sênior, coletando feedback e iterando em sessões colaborativas.',
+      'Liderei o levantamento de requisitos, análise de dados e prototipagem visual em alta fidelidade para uma aplicação interna do Ministério de Minas e Energias, aplicando o GOV.BR Design System oficial. O projeto foi reconhecido como destaque entre pares pela excelência técnica e qualidade de design, entregue através de parceria de extensão universitária com o Centro Universitário de Brasília (CEUB). Apresentei o protótipo final presencialmente para a equipe de engenharia completa do cliente e liderança sênior, coletando feedback e iterando em sessões colaborativas.',
     badge: '⭐ Premiado',
     technologies: ['Figma', 'GOV.BR Design System', 'UX/UI', 'Análise de Dados'],
     links: {

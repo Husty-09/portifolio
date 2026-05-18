@@ -1,3 +1,6 @@
+'use client';
+
+import { useRouter } from 'next/navigation';
 import { Project } from '@/data/projects';
 
 interface ProjectCardProps {
@@ -5,8 +8,12 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
+  const router = useRouter();
+
   return (
-    <div className="group h-full border border-slate-700 rounded-lg p-6 bg-slate-900/50 hover:bg-slate-900/80 hover:border-slate-600 transition-all duration-300">
+    <div
+      onClick={() => router.push(`/projects/${project.slug}`)}
+      className="group h-full border border-slate-700 rounded-lg p-6 bg-slate-900/50 hover:bg-slate-900/80 hover:border-slate-600 transition-all duration-300 cursor-pointer">
       {/* Badge */}
       {project.badge && (
         <div className="inline-block mb-3 text-sm text-blue-400">
