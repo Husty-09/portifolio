@@ -53,7 +53,7 @@ export const projects: Project[] = [
       demo: 'https://hustycore.vercel.app/pt',
       github: 'https://github.com/Husty-09/HustyCore',
     },
-    year: '2024-2025',
+    year: '2026',
     status: 'in-progress',
   },
   {
@@ -77,7 +77,7 @@ export const projects: Project[] = [
       demo: 'https://sudoku-husty.vercel.app',
       github: 'https://github.com/Husty-09/HustySudoku',
     },
-    year: '2024',
+    year: '2026',
     status: 'completed',
   },
   {
@@ -101,7 +101,7 @@ export const projects: Project[] = [
       demo: 'https://govdata-br.vercel.app',
       github: 'https://github.com/Husty-09/GovData-BR',
     },
-    year: '2024-2025',
+    year: '2026',
     status: 'in-progress',
   },
 ];
