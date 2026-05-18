@@ -1,13 +1,26 @@
 'use client';
 
+import { useEffect, useState } from 'react';
+
 export default function AnimatedGridBackground() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden bg-slate-950">
-      {/* Fundo sólido */}
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-950 to-slate-900" />
+      {/* Fundo sólido com parallax */}
+      <div
+        className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-950 to-slate-900"
+        style={{ transform: `translateY(${scrollY * 0.5}px)` }}
+      />
 
       {/* Grid animado */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-30">
         <svg
           className="w-full h-full"
           width="100%"
